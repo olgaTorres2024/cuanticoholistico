@@ -236,6 +236,9 @@
         <a href="#" data-section="promos" class="nav-link"
           ><i class="bi bi-tags"></i><span class="text">Promos</span></a
         >
+        <a href="https://mexico.healy.shop/es/categoria-producto/ediciones-de-healy/?partnername=5308-2359-9921" target="_blank" class="nav-link"
+          ><i class="bi bi-tags"></i><span class="text">Comprar</span></a
+        >
         <a href="#" data-section="contact" class="nav-link"
           ><i class="bi bi-envelope"></i><span class="text">Contacto</span></a
         >
@@ -512,6 +515,10 @@
           alt="Promos"
         />
       </div>
+
+      <div id="comprar" class="section">
+        <button><a class="btn btn-download" href="https://mexico.healy.shop/es/categoria-producto/ediciones-de-healy/?partnername=5308-2359-9921" target="_blank">Comprar</a></button>
+      </div>
     </div>
 
     <script>
@@ -658,40 +665,7 @@
 
         popup.appendChild(message);
         popup.appendChild(contactContainer);
-
-        // Botón para cerrar y redirigir
-        const closeButton = document.createElement("button");
-        closeButton.textContent = "Comprar";
-        closeButton.style.backgroundColor = "#2980b9";
-        closeButton.style.color = "#fff";
-        closeButton.style.border = "none";
-        closeButton.style.padding = "10px 20px";
-        closeButton.style.cursor = "pointer";
-        closeButton.style.marginTop = "10px";
-
-        closeButton.addEventListener("click", function () {
-          window.location.href =
-            "https://mexico.healy.shop/es/categoria-producto/ediciones-de-healy/?partnername=5308-2359-9921";
-        });
-
-        popup.appendChild(closeButton);
-        popupOverlay.appendChild(popup);
-
-        // Agregar el popup al body
-        document.body.appendChild(popupOverlay);
-
-        // Añadir la clase blurred al content para aplicar el blur solo al fondo
-        document.querySelector(".content").classList.add("blurred");
       });
-
-      // Estilos para el efecto de blur
-      const style = document.createElement("style");
-      style.innerHTML = `
-    .blurred {
-      filter: blur(5px);
-    }
-  `;
-      document.head.appendChild(style);
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

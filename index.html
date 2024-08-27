@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuatico Holistico</title>
+    <title>Cuantico Holistico</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,6 +31,7 @@
         overflow-y: auto;
         transition: width 0.3s, background-color 0.3s;
         z-index: 1000;
+        overflow: hidden;
       }
 
       .navbar-nav {
@@ -122,7 +127,6 @@
 
       .section {
         display: none;
-        padding: 20px;
         color: #333;
       }
 
@@ -165,6 +169,16 @@
         background-color: #21618c;
         border-color: #21618c;
       }
+
+      .scroll-container {
+        overflow: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+      }
+
+      .scroll-container::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -176,36 +190,36 @@
   </head>
   <body>
     <button class="navbar-toggler">&#9776;</button>
-    <div class="navbar">
+    <div class="navbar scroll-container">
       <div class="navbar-nav">
         <a href="#" data-section="home" class="nav-link active"
-          ><i class="bi bi-house"></i><span class="text">Inicio</span></a
+          ><i class="bi bi-house"></i><span class="text"><i class="fa-solid fa-house"></i>Inicio</span></a
         >
         <a href="#" data-section="about" class="nav-link"
           ><i class="bi bi-info-circle"></i
-          ><span class="text">¿Qué es?</span></a
+          ><span class="text"><i class="fa-solid fa-question"></i>¿Qué es?</span></a
         >
         <a href="#" data-section="how-it-works" class="nav-link"
           ><i class="bi bi-gear"></i
-          ><span class="text">¿Cómo funciona?</span></a
+          ><span class="text"><i class="fa-solid fa-person-circle-question"></i>¿Cómo funciona?</span></a
         >
         <a href="#" data-section="frequencies" class="nav-link"
           ><i class="bi bi-broadcast"></i
-          ><span class="text">Frecuencias Cuánticas Analizadas</span></a
+          ><span class="text"><i class="fa-solid fa-wave-square"></i>Frecuencias Cuánticas Analizadas</span></a
         >
         <a href="#" data-section="mission" class="nav-link"
-          ><i class="bi bi-bullseye"></i><span class="text">Misión</span></a
+          ><i class="bi bi-bullseye"></i><span class="text"><i class="fa-solid fa-flag-checkered"></i>Misión</span></a
         >
         <a href="#" data-section="vision" class="nav-link"
-          ><i class="bi bi-eye"></i><span class="text">Visión</span></a
+          ><i class="bi bi-eye"></i><span class="text"><i class="fa-solid fa-eye"></i>Visión</span></a
         >
         <a href="#" data-section="benefits" class="nav-link"
-          ><i class="bi bi-heart"></i><span class="text">Beneficios</span></a
+          ><i class="bi bi-heart"></i><span class="text"><i class="fa-solid fa-heart"></i>Beneficios</span></a
         >
 
         <div class="nav-item">
           <a href="#" class="nav-link" id="productosLink"
-            ><i class="bi bi-box"></i><span class="text">Productos</span></a
+            ><i class="bi bi-box"></i><span class="text"><i class="fa-solid fa-cart-shopping"></i>Productos</span></a
           >
           <div class="dropdown-menu">
             <a href="#" data-section="healyGold" class="nav-link"
@@ -233,20 +247,37 @@
         </div>
 
         <a href="#" data-section="demo" class="nav-link"
-          ><i class="bi bi-play-circle"></i><span class="text">Demo</span></a
+          ><i class="bi bi-play-circle"></i><span class="text"><i class="fa-solid fa-user-doctor"></i>Demo</span></a
         >
         <a href="#" data-section="session" class="nav-link"
-          ><i class="bi bi-calendar"></i><span class="text">Sesión</span></a
+          ><i class="bi bi-calendar"></i><span class="text"><i class="fa-solid fa-user-doctor"></i>Sesión a distancia</span></a
         >
         <a href="#" data-section="promos" class="nav-link"
-          ><i class="bi bi-tags"></i><span class="text">Promos</span></a
+          ><i class="bi bi-tags"></i><span class="text"><i class="fa-solid fa-tag"></i>Promos</span></a
         >
         <a href="#" data-section="comprar" class="nav-link"
-          ><i class="bi bi-play-circle"></i><span class="text">Comprar</span></a
+          ><i class="bi bi-play-circle"></i><span class="text"><i class="fa-solid fa-store"></i>Comprar</span></a
         >
         <a href="#" data-section="contact" class="nav-link"
-          ><i class="bi bi-envelope"></i><span class="text">Contacto</span></a
+          ><i class="bi bi-envelope"></i><span class="text"><i class="fa-solid fa-envelope"></i>Contacto</span></a
         >
+        <a
+          href="https://wa.me/525527170266?text=Hola%20quiero%20más%20información"
+          target="_blank"
+          style="
+            background-color: #25d366;
+            color: white;
+            margin: 20px 20px 20px 20px;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 16px;
+          "
+        >
+          <i class="fa-brands fa-whatsapp"></i> Contactame
+        </a>
       </div>
     </div>
 
@@ -263,7 +294,6 @@
 
       <div id="about" class="section">
         <img
-          style="height: 500px; width: 500px"
           src="img/queEs.png"
           class="img-fluid rounded mx-auto d-block"
           alt="¿Qué es?"
@@ -386,7 +416,7 @@
       <div id="demo" class="section">
         <iframe
           width="100%"
-          height="100%"
+          height="1000vh"
           src="https://www.youtube.com/embed/_LULut90q3k?autoplay=1&mute=1"
         >
         </iframe>

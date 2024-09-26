@@ -186,10 +186,10 @@ html {
 
 .float-wa{
         position:fixed;
-        width:60px;
-        height:60px;
+        width:75px;
+        height:75px;
         bottom:55px;
-        right:40px;
+        right:55px;
         background-color:#25d366;
         color:#FFF;
         border-radius:50px;

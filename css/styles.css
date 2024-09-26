@@ -164,3 +164,22 @@ html {
 .scroll-container::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+.btn{
+	display: block;
+	width: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	background-color: rgb(127, 206, 255);
+	border-radius: 10px;
+	padding: 15px 30px;
+	margin: 150px 130px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: transparent;
+	border: 2px solid rgb(127, 206, 255);
+	color: rgb(127, 206, 255);
+}

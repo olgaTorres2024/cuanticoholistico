@@ -21,13 +21,40 @@
     <script type="text/javascript">
       function _0x5dea(n,e){var r=_0x46e8();return(_0x5dea=function(n,e){return r[n-=253]})(n,e)}function _0x46e8(){var n=["9603867VoYnQy","5OXleuJ","1750004wmnbZi","init","2042562RrofPs","8FWwJgW","386306ahiBTu","9XDHnHy","7491nKmHYE","14621508tXAzDp","xkPIXJkOSw","fzsbZ","468AGoxVi","VZ0dZ2o","10569550oXqoel"];return(_0x46e8=function(){return n})()}(function(){for(var n=_0x5dea,e=_0x46e8();;)try{if(931479==+parseInt(n(261))+parseInt(n(265))/2+-parseInt(n(267))/3*(-parseInt(n(256))/4)+parseInt(n(260))/5*(parseInt(n(263))/6)+parseInt(n(259))/7*(-parseInt(n(264))/8)+parseInt(n(266))/9*(parseInt(n(258))/10)+-parseInt(n(253))/11)break;e.push(e.shift())}catch(n){e.push(e.shift())}})(),function(){var n=_0x5dea,e={fzsbZ:n(254)+n(257)};emailjs[n(262)](e[n(255)])}();
     </script>
+
+
+<script>
+  // Get the elements by their ID
+  var popupLink = document.getElementById("popup-link");
+  var popupWindow = document.getElementById("popup-window");
+  var closeButton = document.getElementById("close-button");
+  // Show the pop-up window when the link is clicked
+  popupLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupWindow.style.display = "block";
+  });
+  // Hide the pop-up window when the close button is clicked
+  closeButton.addEventListener("click", function() {
+    popupWindow.style.display = "none";
+  });
+</script>        
+
+	  
  </head> 
 	
   <body style="background:white">
     <button class="navbar-toggler">&#9776;</button>
     <div class="navbar scroll-container">
       
-	 <div class="window-notice" id="window-notice">
+<div id="popup-window">
+  <h1>Pop-up Window</h1>
+  <p>This is a pop-up window.</p>
+  <button id="close-button">Close</button>
+</div>        
+	    
+	    
+	    
+	    <div class="window-notice" id="window-notice">
     <div class="content">
         <div class="content-text">Este sitio utiliza cookies para obtener la mejor experiencia en nuestra web. 
         <a href="#">Leer más.</a></div>

@@ -591,3 +591,9 @@ html {
 .healy-blocks-panel .components-base-control.components-range-control {
   min-width: 210px;
 }
+
+.fondo-color {
+  background-color: #d63384;
+  color: #ffffff;
+}
+

@@ -67,6 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Para el menú de Promociones
   const promosLink = document.getElementById("promosLink");
   const dropdownMenuPromociones = promosLink.nextElementSibling;
+
+// Para el menú de Gold
+  const goldLink = document.getElementById("goldLink");
+  const dropdownMenuGold = goldLink.nextElementSibling;
   
   const navbarToggler = document.querySelector(".navbar-toggler");
   
@@ -115,7 +119,12 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     dropdownMenuPromociones.classList.toggle("show");
   });
-  
+
+  // Toggle del menú de Gold
+  goldLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuGold.classList.toggle("show");
+  });
 
   // Crear el contenedor del popup
   const popupOverlay = document.createElement("div");

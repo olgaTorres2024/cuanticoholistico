@@ -71,6 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // Para el menú de Gold
   const goldLink = document.getElementById("goldLink");
   const dropdownMenuGold = goldLink.nextElementSibling;
+
+// Para el menú de Holistic
+  const holisticLink = document.getElementById("holisticLink");
+  const dropdownMenuHolistic = holisticLink.nextElementSibling;
+
+  // Para el menú de Resonance
+  const resonanceLink = document.getElementById("resonanceLink");
+  const dropdownMenuResonance = resonanceLink.nextElementSibling;
+
+  // Para el menú de ResonancePLUS
+  const resonancePLUSLink = document.getElementById("resonancePLUSLink");
+  const dropdownMenuResonancePLUS = resonancePLUSLink.nextElementSibling;
+
+// Para el menú de Profesional
+  const profesionalLink = document.getElementById("profesionalLink");
+  const dropdownMenuProfesional = profesionalLink.nextElementSibling;
   
   const navbarToggler = document.querySelector(".navbar-toggler");
   
@@ -126,6 +142,30 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownMenuGold.classList.toggle("show");
   });
 
+  // Toggle del menú de Holistic
+  holisticLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuHolistic.classList.toggle("show");
+  });
+
+  // Toggle del menú de Resonance
+  resonanceLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuResonance.classList.toggle("show");
+  });
+
+  // Toggle del menú de Resonance PLUS
+  resonancePLUSLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuResonancePLUS.classList.toggle("show");
+  });
+
+  // Toggle del menú de Profesional
+  profesionalLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuProfesional.classList.toggle("show");
+  });
+  
   // Crear el contenedor del popup
   const popupOverlay = document.createElement("div");
   popupOverlay.style.position = "fixed";

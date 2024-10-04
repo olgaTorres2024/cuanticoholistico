@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const productosLink = document.getElementById("productosLink");
   const dropdownMenuProductos = productosLink.nextElementSibling;
   
-  // Para el menú de servicios
-  const serviciosLink = document.getElementById("serviciosLink");
-  const dropdownMenuServicios = serviciosLink.nextElementSibling;
+  // Para el menú de Promociones
+  const promosLink = document.getElementById("promosLink");
+  const dropdownMenuPromociones = promosLink.nextElementSibling;
   
   const navbarToggler = document.querySelector(".navbar-toggler");
   
@@ -110,10 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownMenuProductos.classList.toggle("show");
   });
   
-  // Toggle del menú de servicios
-  serviciosLink.addEventListener("click", function (e) {
+  // Toggle del menú de promociones
+  promosLink.addEventListener("click", function (e) {
     e.preventDefault();
-    dropdownMenuServicios.classList.toggle("show");
+    dropdownMenuPromociones.classList.toggle("show");
   });
   
 

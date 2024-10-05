@@ -594,8 +594,8 @@ html {
 
 .fondo-color {
   /* background-color: #ff00ff; */
-  background-color: #c654a7;
-  background-image: linear-gradient(95deg, #654a7 13%, #3f3c5c 100%);
+  /* background-color: #c654a7; */
+  background-color: linear-gradient(95deg, #654a7 13%, #3f3c5c 100%);
   color: #ffffff;
   font-size:15px;
 }

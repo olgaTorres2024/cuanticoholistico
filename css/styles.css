@@ -596,13 +596,16 @@ html {
 .fondo-color {
   /* background-color: #ff00ff; */
  /* background-color: #c654a7;
-  background-color: linear-gradient(95deg, #654a7 13%, #3f3c5c 100%);*/
+  	background-color: linear-gradient(95deg, #654a7 13%, #3f3c5c 100%);*/
 	background-color:  #c654a7;
 /* background: linear-gradient(98deg, rgba(2,0,36,1) 0%, rgba(129,36,142,1) 0%, rgba(144,49,182,1) 2%, rgba(65,16,105,1) 100%, rgba(189,48,240,1) 100%, rgba(0,212,255,1) 100%); */
   
 	color: #ffffff;
-
-font-size:15px;
+	font-size:15px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 

@@ -167,6 +167,8 @@ html {
 }
 
 .btn{
+	float: left;
+	position: fixed;
 	display: block;
 	width: 250px;
 	font-family: Arial, Helvetica, sans-serif;

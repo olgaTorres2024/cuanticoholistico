@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownMenuProfesional = profesionalLink.nextElementSibling;
 
 // Para el menú de Maghealy
- // const maghealyLink = document.getElementById("maghealyLink");
-  //const dropdownMenuMaghealy = maghealyLink.nextElementSibling;
+  const maghealyLink = document.getElementById("maghealyLink");
+  const dropdownMenuMaghealy = maghealyLink.nextElementSibling;
   
   const navbarToggler = document.querySelector(".navbar-toggler");
   
@@ -171,9 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Toggle del menú de MagHealy
-  //maghealyLink.addEventListener("click", function (e) {
-   // e.preventDefault();
-    //dropdownMenuMaghealy.classList.toggle("show");
+  maghealyLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuMaghealy.classList.toggle("show");
   });
   
   // Crear el contenedor del popup

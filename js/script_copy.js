@@ -171,9 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Toggle del menú de MagHealy
-  maghealyLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    dropdownMenuMaghealy.classList.toggle("show");
+  //maghealyLink.addEventListener("click", function (e) {
+   // e.preventDefault();
+    //dropdownMenuMaghealy.classList.toggle("show");
   });
   
   // Crear el contenedor del popup

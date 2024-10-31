@@ -165,6 +165,12 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     dropdownMenuProfesional.classList.toggle("show");
   });
+
+  // Toggle del menú de MagHealy
+  maghealyLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdownMenuMaghealy.classList.toggle("show");
+  });
   
   // Crear el contenedor del popup
   const popupOverlay = document.createElement("div");

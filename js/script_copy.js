@@ -87,6 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // Para el menú de Profesional
   const profesionalLink = document.getElementById("profesionalLink");
   const dropdownMenuProfesional = profesionalLink.nextElementSibling;
+
+// Para el menú de Maghealy
+  const maghealyLink = document.getElementById("maghealyLink");
+  const dropdownMenuMaghealy = maghealyLink.nextElementSibling;
   
   const navbarToggler = document.querySelector(".navbar-toggler");
   

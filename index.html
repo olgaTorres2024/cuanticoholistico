@@ -95,6 +95,23 @@
 		}
     	</style>
 
+	<style>
+    		/* Agrega la fuente Alice desde Google Fonts */
+    		@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+    		td {
+      			color: #666666;
+      			font-size: 40px;
+      			font-family: 'Comfortaa'; /* Utiliza la fuente Comfortaa */
+      			text-align: center;
+    		}
+    		th {
+      			color: #cccccc;
+      			text-align: center;
+       			font-size: 12px;
+      			font-family: 'Comfortaa', sans-serif; /* Utiliza la fuente Comfortaa*/
+    		}
+  	</style>
+
 
  </head> 
 	
@@ -107,7 +124,76 @@
 	<div class="img-container"> <!-- Inline parent element -->
     		<img src="img/CH-Logo.png" alt="Cuantico Holistico" height="150" width="190">
 	</div>
-	    
+
+	<!-- Contador regresivo -->
+  	<section>
+    		<table align="center" width="90%">
+      			<tr>
+        			<td><span id="days"></span></td>
+       	 			<td><span id="hours"></span></td>
+        			<td><span id="minutes"></span></td>
+        			<td><span id="seconds"></span></td>
+      			</tr>
+      			<tr>
+        			<th>Días</th>
+        			<th>Horas</th>
+        			<th>Minutos</th>
+        			<th>Segundos</th>
+      			</tr>
+    		</table>
+  	</section>
+  	<!-- Fin contador regresivo -->
+  	<script>
+    		document.addEventListener('DOMContentLoaded', () => {
+      		//===
+      		// VARIABLES
+      		//===
+      		const DATE_TARGET = new Date('30/11/2024 11:59 PM');
+      		// DOM for render
+      		const SPAN_DAYS = document.querySelector('span#days');
+      		const SPAN_HOURS = document.querySelector('span#hours');
+      		const SPAN_MINUTES = document.querySelector('span#minutes');
+      		const SPAN_SECONDS = document.querySelector('span#seconds');
+      		// Milliseconds for the calculations
+      		const MILLISECONDS_OF_A_SECOND = 1000;
+      		const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+      		const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+      		const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+      		//===
+      		// FUNCTIONS
+      		//===
+      		/**
+       		* Method that updates the countdown and the sample
+       		*/
+      		function updateCountdown() {
+        		// Calcs
+        		const NOW = new Date()
+        		const DURATION = DATE_TARGET - NOW;
+        		let REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+        		let REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+        		let REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+        		let REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+        		// Set any negative values to 0
+        		REMAINING_DAYS = REMAINING_DAYS < 0 ? 0 : REMAINING_DAYS;
+        		REMAINING_HOURS = REMAINING_HOURS < 0 ? 0 : REMAINING_HOURS;
+        		REMAINING_MINUTES = REMAINING_MINUTES < 0 ? 0 : REMAINING_MINUTES;
+        		REMAINING_SECONDS = REMAINING_SECONDS < 0 ? 0 : REMAINING_SECONDS;
+        		// Thanks Naileth Pinto
+        		// Render
+        		SPAN_DAYS.textContent = REMAINING_DAYS;
+        		SPAN_HOURS.textContent = REMAINING_HOURS;
+        		SPAN_MINUTES.textContent = REMAINING_MINUTES;
+        		SPAN_SECONDS.textContent = REMAINING_SECONDS;
+      			}
+      		//===
+      		// INIT
+      		//===
+      		updateCountdown();
+      			// Refresh every second
+      			setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+    			});
+  	</script>
+
 	<div class="navbar-nav">
 	
         	<a href="#" data-section="home" class="nav-link active"
@@ -3595,7 +3681,7 @@
         	/>
       	</div>
 
-	<div id="arbustosaustralianos" class="section">
+	<div id="coaching" class="section">
 		<p>
 			<img src="img/healy.png" class="izquierda" height="100" width="100">
 			<h1 class="text-center">Programa de Flores de Bach</h1>
@@ -3603,39 +3689,39 @@
 		</p>
 	        <br /><br />
         	<img
-        		src="img/FloresBach1.png"
+        		src="img/Coaching1.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach2.png"
+        		src="img/Coaching2.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach3.png"
+        		src="img/Coaching3.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach4.png"
+        		src="img/Coaching4.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach5.png"
+        		src="img/Coaching5.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach6.png"
+        		src="img/Coaching6.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<img
-        		src="img/FloresBach7.png"
+        		src="img/Coaching7.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach" 
+          		alt="Coaching" 
         	/>
 		<a class="btn_compra" href="https://www.healy.shop/es/categoria-producto/ediciones-de-healy/?partnername=5308-2359-9921"
           	target="_blank" > Comprar mi Healy</a>
@@ -3685,7 +3771,7 @@
 		<img
           		src="img/CH-Footer.png"
           		class="img-fluid rounded mx-auto d-block"
-          		alt="FloresBach"
+          		alt="Coaching"
         	/>
       	</div>
 

@@ -1,4 +1,4 @@
-let fecha = new Date(2024, 12, 1, 0, 0);
+let fecha = new Date(2024, 10, 30, 23, 59);
 let msFecha = fecha.getTime();
 
 let parrafoDias = document.querySelector("#dias");

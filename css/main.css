@@ -41,6 +41,8 @@ body {
     font-weight: 800; 
 }
 
+
+/*
 @media (width < 550px) {
     .cuenta-atras {
         display: grid;
@@ -54,3 +56,4 @@ body {
         flex-direction: column;
     }
 }
+*/
